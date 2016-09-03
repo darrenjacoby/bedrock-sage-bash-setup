@@ -28,7 +28,7 @@ Bash script for starting new projects with Bedrock and Sage9.  Tested with Bash 
   * Activate theme
   * Open Atom
 
-## Requires
+## Requirements
 * [Composer](https://getcomposer.org/doc/00-intro.md)
 * [WP CLI](https://github.com/wp-cli/wp-cli)
 * [WP CLI Dotenv](https://github.com/aaemnnosttv/wp-cli-dotenv-command)
