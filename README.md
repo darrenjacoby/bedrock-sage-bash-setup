@@ -35,24 +35,24 @@ Bash script for starting new projects with Bedrock and Sage9.  Tested with Bash 
 * [Git](https://git-scm.com/)
 
 ## Installation
-Clone files:
+Clone files from this repository:
 ```bash
-git clone https://github.com/darrenjacoby/setup-bedrock-sage.git bedrock-sage
+git clone git@github.com:darrenjacoby/bedrock-sage-bash-setup.git bedrock-sage
 ```
 
 Move bash script bedrock-sage.sh to /usr/local/bin:
 ```bash
-mv /bedrock-sage/bedrock-sage.sh  /usr/local/bin
+mv bedrock-sage/bedrock-sage.sh  /usr/local/bin
 ```
 
 #### Set up an alias:
 Using Bash:
 ```bash
-echo 'alias bedrock-sage="bash ~/usr/local/bin/bedrock-sage.sh"' >>~/.bash_profile
+echo 'alias bedrock-sage="bash /usr/local/bin/bedrock-sage.sh"' >>~/.bash_profile
 ```
 Using ZSH:
 ```bash
-echo 'alias bedrock-sage="bash ~/usr/local/bin/bedrock-sage.sh"' >>~/.zshrc
+echo 'alias bedrock-sage="bash /usr/local/bin/bedrock-sage.sh"' >>~/.zshrc
 ```
 
 ## Run
