@@ -1,4 +1,4 @@
-# Setup Bedrock & Sage9
+# Setup Bedrock & Sage
 Bash script for starting new projects with Bedrock and Sage9.  Tested with Bash & ZSH on MacOSX.
 
 ## Tasks
