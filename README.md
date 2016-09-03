@@ -1,8 +1,10 @@
 # Setup Bedrock & Sage
 Bash script for starting new projects with Bedrock and Sage9.  Tested with Bash & ZSH on MacOSX.
 
+![alt text](https://cloud.githubusercontent.com/assets/15921694/18224024/99369172-71c8-11e6-92b7-bf52bbb27f4f.gif "Bedrock Sage Bash Setup")
+
 ## Tasks
-* Bedrock
+* **Bedrock**
   * Download Bedrock
   * Create default .env file
   * Generate .env salts
@@ -18,7 +20,7 @@ Bash script for starting new projects with Bedrock and Sage9.  Tested with Bash 
   * Create default homepage
   * Install plugins
     * Disable comments
-* Sage
+* **Sage**
   * Download Sage
   * Replace bedrock.dev with project_name.dev in assets/config.json
   * Init Git
@@ -60,4 +62,4 @@ cd to the parent directory for your project (example: dev/)
 cd dev/
 bedrock-sage
 ```
-Follow the prompts and that should be it.
+**Follow the prompts to setup Bedrock and Sage9.**
