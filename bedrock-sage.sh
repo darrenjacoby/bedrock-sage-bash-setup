@@ -29,7 +29,7 @@ wp_password=${wp_password:=admin}
 wp_email=${wp_host:=wordpress@project.dev}
 current_path=$(pwd)
 
-# Check if directory exists
+# Check if directory/project exists
 while [ -d "$(pwd)/$project" ]; do
 	printf "\n${bold}ERROR: ${normal}$(pwd)/$project) already exists.\n"
   read -p "${bold}Please use another project name: ${normal}" project
