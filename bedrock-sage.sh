@@ -38,7 +38,7 @@ done
 #
 # Setup Bedrock
 #
-printf "\n${bold}── Bedrock ── \n${normal}"
+printf "\n${bold}── Bedrock ── ${normal}\n"
 $composer create-project roots/bedrock $project
 cd "$(pwd)/$project"
 
@@ -106,7 +106,7 @@ printf "Run NPM Build:\n"
 npm run build
 
 printf "Activate Sage:\n"
-wp theme activate $name
+wp theme activate $project
 
 printf "Open Atom\n"
 atom .
