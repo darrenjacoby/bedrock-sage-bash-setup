@@ -1,41 +1,6 @@
 # Setup Bedrock & Sage9
 Bash script for starting new projects with Bedrock and Sage 9.  Tested with Bash & ZSH on MacOSX.
 
-## Requires
-* [Composer](https://getcomposer.org/doc/00-intro.md)
-* [WP CLI](https://github.com/wp-cli/wp-cli)
-* [WP CLI Dotenv](https://github.com/aaemnnosttv/wp-cli-dotenv-command)
-* [Git](https://git-scm.com/)
-
-## Installation
-Download files:
-```bash
-git clone https://github.com/darrenjacoby/setup-bedrock-sage.git bedrock-sage
-```
-
-Move bash script bedrock-sage.sh to /usr/local/bin:
-```bash
-mv /bedrock-sage/bedrock-sage.sh  /usr/local/bin
-```
-
-#### Set up an alias:
-Using bash:
-```bash
-echo 'alias bedrock-sage="bash ~/usr/local/bin/bedrock-sage.sh"' >>~/.bash_profile
-```
-Using ZSH:
-```bash
-echo 'alias bedrock-sage="bash ~/usr/local/bin/bedrock-sage.sh"' >>~/.zshrc
-```
-
-## Run
-cd to the parent directory for your project (example: dev/)
-
-```bash
-bedrock-sage
-```
-Follow the prompts and that should be it.
-
 ## Tasks
 * Bedrock
   * Download Bedrock
@@ -60,3 +25,38 @@ Follow the prompts and that should be it.
   * Run NPM install and build
   * Activate theme
   * Open Atom
+
+## Requires
+* [Composer](https://getcomposer.org/doc/00-intro.md)
+* [WP CLI](https://github.com/wp-cli/wp-cli)
+* [WP CLI Dotenv](https://github.com/aaemnnosttv/wp-cli-dotenv-command)
+* [Git](https://git-scm.com/)
+
+## Installation
+Clone files:
+```bash
+git clone https://github.com/darrenjacoby/setup-bedrock-sage.git bedrock-sage
+```
+
+Move bash script bedrock-sage.sh to /usr/local/bin:
+```bash
+mv /bedrock-sage/bedrock-sage.sh  /usr/local/bin
+```
+
+#### Set up an alias:
+Using Bash:
+```bash
+echo 'alias bedrock-sage="bash ~/usr/local/bin/bedrock-sage.sh"' >>~/.bash_profile
+```
+Using ZSH:
+```bash
+echo 'alias bedrock-sage="bash ~/usr/local/bin/bedrock-sage.sh"' >>~/.zshrc
+```
+
+## Run
+cd to the parent directory for your project (example: dev/)
+
+```bash
+bedrock-sage
+```
+Follow the prompts and that should be it.
