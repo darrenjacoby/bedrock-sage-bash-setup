@@ -1,5 +1,5 @@
 # Setup Bedrock & Sage9
-Bash script for starting new projects with Bedrock and Sage 9.  Tested with Bash & ZSH on MacOSX.
+Bash script for starting new projects with Bedrock and Sage9.  Tested with Bash & ZSH on MacOSX.
 
 ## Tasks
 * Bedrock
@@ -57,6 +57,7 @@ echo 'alias bedrock-sage="bash ~/usr/local/bin/bedrock-sage.sh"' >>~/.zshrc
 cd to the parent directory for your project (example: dev/)
 
 ```bash
+cd dev/
 bedrock-sage
 ```
 Follow the prompts and that should be it.
