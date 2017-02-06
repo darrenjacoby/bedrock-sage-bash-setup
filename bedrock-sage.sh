@@ -72,11 +72,18 @@ wp post delete 2 --force
 
 # Remove WordPress Default Themes
 printf "\n${bold}Remove Default Themes:\n${normal}"
-wp theme delete "twentyten"
-wp theme delete "twentyeleven"
-wp theme delete "twentytwelve"
-wp theme delete "twentythirteen"
-wp theme delete "twentyfourteen"
+#wp theme delete twentyten
+#wp theme delete twentyeleven
+#wp theme delete twentytwelve
+#wp theme delete twentythirteen
+#wp theme delete twentyfourteen
+rm -rf $(pwd)/web/wp/wp-content/themes/twentyten
+rm -rf $(pwd)/web/wp/wp-content/themes/twentyeleven
+rm -rf $(pwd)/web/wp/wp-content/themes/twentytwelve
+rm -rf $(pwd)/web/wp/wp-content/themes/twentythirteen
+rm -rf $(pwd)/web/wp/wp-content/themes/twentyfourteen
+rm -rf $(pwd)/web/wp/wp-content/themes/twentyfifteen
+printf "${bold}Success:${normal} Deleted themes.\n"
 
 # Create Homepage
 printf "\n${bold}Create Homepage:\n${normal}"
@@ -87,12 +94,14 @@ wp option update show_on_front 'page'
 printf "\n${bold}Install Plugins:\n${normal}"
 $composer require wpackagist-plugin/disable-comments
 wp plugin activate disable-comments
+$composer require soberwp/intervention
+wp plugin activate intervention
 
 #
 # Setup Sage
 #
 printf "\n${bold}── Sage9 ── \n${normal}"
-$composer create-project roots/sage web/app/themes/$project 9.0.0-alpha.1
+$composer create-project roots/sage web/app/themes/$project
 cd "$(pwd)/web/app/themes/$project"
 replace "bedrock" "$project" -- assets/config.json
 git init
